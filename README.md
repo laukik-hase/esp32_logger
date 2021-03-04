@@ -7,6 +7,7 @@ Logging library for ESP32 providing improved logging to ESP-IDF projects.
 * [Introduction](#introduction)
 * [Requirements](#requirements)
 * [Installation](#installation)
+* [Disclaimer](#disclaimer)
 * [Example](#example)
 * [To-do](#to-do)
 * [Contributors](#contributors)
