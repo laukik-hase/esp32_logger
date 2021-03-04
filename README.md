@@ -38,7 +38,7 @@ If you are using the already using the ESP-IDF logging component, just replace `
 
 ## Disclaimer
 
-This library is a just a wrapper for the original ESP-IDF logging library with some added features. It helps us debug our projects without any difficulty. Parameters like thread safety, buffer overflow, heap defragmentation have never been encountered and tested by us. Also, as this library does not use the ESP_EARLY_LOG functionality, it cannot be used to print logs in ISRs.
+This library is a just a wrapper for the original ESP-IDF logging library with some added features. It helps us debug our projects without any difficulty. Parameters like thread safety, heap defragmentation have never been encountered and tested by us. Also, as this library does not use the ESP_EARLY_LOG functionality, it cannot be used to print logs in ISRs.
 
 ## Example
 ```C
@@ -58,6 +58,12 @@ void app_main(void)
     logV(TAG, "Verbose logs: %s", str);
 }
 ```
+
+### Output
+
+<p align="center">
+    <kbd><img width="600" height="150" src="assets/esp32_logger.png" border="1"></kbd>
+</p>
 
 ## To-do
 * Heap and thread-safety analysis when logs are being printed from multiple threads

@@ -12,7 +12,7 @@
 #include "esp_err.h"
 
 /*!< Default logging level*/
-#define LOG_LOCAL_LEVEL ESP_LOG_VERBOSE
+#define LOG_LOCAL_LEVEL (ESP_LOG_VERBOSE)
 #include "esp_log.h"
 // For more information on ESP-IDF logging:
 // https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/log.html
