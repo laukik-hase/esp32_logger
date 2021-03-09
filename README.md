@@ -10,6 +10,7 @@ Logging library for ESP32 providing improved logging to ESP-IDF projects.
 * [Disclaimer](#disclaimer)
 * [Example](#example)
 * [To-do](#to-do)
+* [Projects](#projects)
 * [Contributors](#contributors)
 * [References](#references)
 * [License](#license)
@@ -39,7 +40,7 @@ If you are using the already using the ESP-IDF logging component, just replace `
 
 ## Disclaimer
 
-This library is a just a wrapper for the original ESP-IDF logging library with some added features. It helps us debug our projects without any difficulty. Parameters like thread safety, heap defragmentation have never been encountered and tested by us. Also, as this library does not use the ESP_EARLY_LOG functionality, it cannot be used to print logs in ISRs.
+This library is a just a wrapper for the original ESP-IDF logging library with some added features and it helps us debug our projects without any difficulty. Parameters like thread safety, heap fragmentation have never been encountered and tested by us. So, if you face any problems, raise an issue. Also, as this library does not use the ESP_EARLY_LOG functionality, it cannot be used to print logs in ISRs.
 
 ## Example
 ```C
@@ -71,6 +72,11 @@ void app_main(void)
 * Logging to file (on SPIFFS / SD) - with thread safety locks
 * Printing logs in ISRs
 
+## Projects
+* [sra-board-component](https://github.com/SRA-VJTI/sra-board-component)
+* [OTA_update_STM32_using_ESP32](https://github.com/laukik-hase/OTA_update_STM32_using_ESP32)
+
+__Note: In case you are using this in your project, let us know - we will feature it here!.__
 
 ## Contributors
 * [Laukik Hase](https://github.com/laukik-hase)
